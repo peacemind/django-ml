@@ -1,12 +1,13 @@
 from django.shortcuts import render
 
-from rest_framework import status
+import pandas as pd
+
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .apps import PredictionConfig
-import pandas as pd
+
 
 # Class based view to predict based on IRIS model
 class IRIS_Model_Predict(APIView):
